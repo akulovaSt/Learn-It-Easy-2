@@ -13,3 +13,7 @@
 •	хранить в одном месте учебные материалы по курсу и иметь к ним доступ в любое время
 
 •	формировать учебное расписание в соответствии с установленным временем и иметь к нему доступ в любой момент
+
+# Screens
+<img src="https://github.com/akulovaSt/Learn-It-Easy/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA1.PNG">
+<img src="https://github.com/akulovaSt/Learn-It-Easy/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA2.PNG">
