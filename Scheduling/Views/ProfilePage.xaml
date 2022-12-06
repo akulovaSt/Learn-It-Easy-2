@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Scheduling.Views.ProfilePage"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#8AC6D1</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+
+            <StackLayout Padding="10">
+
+                <CollectionView ItemsSource="{Binding Disciplines}" SelectionMode="Single" SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemTemplate >
+                        <DataTemplate>
+                            <Grid Padding="10"
+                              RowDefinitions="Auto, *"
+                              ColumnDefinitions="Auto, *" BackgroundColor ="#B0E0E6">
+                             
+
+                                <Image Grid.RowSpan="2"
+                                   Source="{Binding Image}"
+                                   Aspect="AspectFill"
+                                   HeightRequest="60"
+                                   WidthRequest="60"/>
+                                <Label Grid.Column="1"
+                                   Text="{Binding Name}"
+                                   FontAttributes="Bold" TextColor="#2694ab"/>
+                                <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding Description}" TextColor="#2694ab"
+                                   VerticalOptions="End"/>
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+               
+            </StackLayout>
+
+
+
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

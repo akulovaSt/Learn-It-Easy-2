@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Scheduling.Views.AuthPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#8AC6D1</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            
+            
+
+            <StackLayout Spacing="20" Padding="10">
+
+
+                <Frame BorderColor="#B0E0E6" BackgroundColor="#B0E0E6" CornerRadius="30" Margin="10, 100, 10, 0" HeightRequest="350">
+                    
+                </Frame>
+                
+                <Label Text="Авторизация" FontSize="Large"  HorizontalOptions="Start"  Margin="30, -360, 20, 0" TextColor="White"/>
+
+                <Frame HasShadow="False" Margin="20, 80, 20, 0" CornerRadius="25" Padding="2" BackgroundColor="#B0E0E6" WidthRequest="150"  HeightRequest="50">
+                    <Frame HasShadow="False" CornerRadius="23" BackgroundColor="White" Padding="5">
+                        <Entry x:Name="Pl1" Margin="5, 0, 5, 0" Placeholder="Логин" TextColor="#8ac6d1" PlaceholderColor="#B0E0E6" FontSize="14" HorizontalTextAlignment="Start" />
+                    </Frame>
+                </Frame>
+
+                <Frame HasShadow="False" Margin="20, 2, 20, 0" CornerRadius="25" Padding="2" BackgroundColor="#B0E0E6" WidthRequest="150"  HeightRequest="50">
+                    <Frame HasShadow="False" CornerRadius="23" BackgroundColor="White" Padding="5">
+                        <Entry x:Name="Pl2" Margin="5, 0, 5, 0" Placeholder="Пароль" TextColor="#8ac6d1" PlaceholderColor="#B0E0E6" FontSize="14" HorizontalTextAlignment="Start" />
+                    </Frame>
+                </Frame>
+
+                <Button BackgroundColor="#fae3d9" CornerRadius="15" Text = "Войти" Margin="5, 90, 5, 0" FontSize="Medium" BorderWidth="1" HorizontalOptions="Center"  WidthRequest="100"  HeightRequest="50"  />
+                
+
+                <Label Text="У Вас еще нет аккаунта? Создайте его!" HorizontalOptions="Start"  Margin="60, 10, 0, 0" TextColor="#B0E0E6" FontSize="14"/>
+            </StackLayout>
+
+
+
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

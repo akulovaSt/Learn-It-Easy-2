@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Scheduling.Views.NoteAddingPage">
+    <ContentPage.Content>
+        <Frame  HeightRequest="50" BackgroundColor="#FFE4E1" >
+        <StackLayout Spacing="3" Padding="15" Margin="20">
+
+
+            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium"  TextColor="White"/>
+
+            <Grid ColumnDefinitions="*,*">
+                <Button Text="Сохранить"
+                        Clicked="OnSaveButton_Clicked" BackgroundColor="#B0E0E6"/>
+
+                <Button Grid.Column="1"
+                        Text="Удалить"
+                        Clicked="OnDeleteButton_CLicked" BackgroundColor="#696969"/>
+            </Grid>
+        </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
